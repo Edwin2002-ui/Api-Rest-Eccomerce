@@ -1,5 +1,5 @@
 const  {Estados} = require('../models');
-const estados = require('../models/estados');
+
 
 
 exports.getEstados = async (req, res) => {  
