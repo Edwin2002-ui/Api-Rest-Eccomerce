@@ -22,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
 
   Estados.associate = (models) => {
     Estados.hasMany(models.Usuarios, { foreignKey: 'idEstado' });
-    Estados.hasMany(models.Producto, { foreignKey: 'idEstado' });
+    Estados.hasMany(models.Productos, { foreignKey: 'idEstado' });
     Estados.hasMany(models.Orden, { foreignKey: 'idEstado' });
   };
 

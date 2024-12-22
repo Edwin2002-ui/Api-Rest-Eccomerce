@@ -1,12 +1,12 @@
 const express = require('express');
 const router = express.Router();
 const productoController = require('../controllers/productoController');
+const upload = require('../middlewares/upload');
 
-// Definir rutas
-router.get('/', productoController.getProductos); // Listar todos los productos
-
-// router.post('/', productoController.createProducto); // Crear un nuevo producto
-// router.put('/:id', productoController.updateProducto); // Actualizar un producto por ID
+// rutas para los productos 
+router.get('/', productoController.getProductos); // Listar todos los productos nos servira para el front
+router.post('/',productoController.createProducto); // Crear 
+router.put('/:id', productoController.updateProducto); // Actualizamos
 // router.delete('/:id', productoController.deleteProducto); // Eliminar un producto por ID
 
 module.exports = router;

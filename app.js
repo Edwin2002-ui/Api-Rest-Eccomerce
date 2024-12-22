@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api/productos', require('./routes/productoRoutes'));
-app.use('/api/roles', require('./routes/rolRoutes'));
+
 
 // Sincroniza con la base de datos y arranca el servidor
 sequelize.authenticate()

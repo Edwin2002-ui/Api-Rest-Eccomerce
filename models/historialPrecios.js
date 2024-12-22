@@ -30,7 +30,7 @@ module.exports = (sequelize, DataTypes) => {
   });
 
   HistorialPrecios.associate = (models) => {
-    HistorialPrecios.belongsTo(models.Producto, { foreignKey: 'idProducto' });
+    HistorialPrecios.belongsTo(models.Productos, { foreignKey: 'idProducto' });
   };
 
   return HistorialPrecios;

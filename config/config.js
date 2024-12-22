@@ -8,9 +8,10 @@ module.exports = {
     host: process.env.DB_HOST,
     port: process.env.DB_PORT,
     dialect: process.env.DB_DIALECT,
+    timezone: 'America/Guatemala',
     dialectOptions: {
       options: {
-        encrypt: process.env.DB_ENCRYPT === 'true', // Esto se usa para conexiones seguras
+        encrypt: process.env.DB_ENCRYPT === 'true', 
       },
     },
   },
@@ -21,6 +22,7 @@ module.exports = {
     host: process.env.DB_HOST,
     port: process.env.DB_PORT,
     dialect: process.env.DB_DIALECT,
+    timezone: 'America/Guatemala',
     dialectOptions: {
       options: {
         encrypt: process.env.DB_ENCRYPT === 'true',
@@ -34,6 +36,7 @@ module.exports = {
     host: process.env.DB_HOST,
     port: process.env.DB_PORT,
     dialect: process.env.DB_DIALECT,
+    timezone: 'America/Guatemala',
     dialectOptions: {
       options: {
         encrypt: process.env.DB_ENCRYPT === 'true',
