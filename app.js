@@ -15,6 +15,7 @@ app.get('/', (req, res) => {
 
 app.use('/api/productos', require('./routes/productoRoutes'));
 app.use('/api/categorias', require('./routes/categoriasRoutes'));
+app.use('/api/estados', require('./routes/estadosRoutes'));
 
 
 // Sincroniza con la base de datos y arranca el servidor
