@@ -21,10 +21,10 @@ module.exports = (sequelize, DataTypes) => {
     fechaCreacion: {
       type: DataTypes.DATE,
       allowNull: false,
-      defaultValue: DataTypes.NOW,
+      // defaultValue: DataTypes.NOW,
     },
     fechaEntrega: {
-      type: DataTypes.DATE,
+      type: DataTypes.DATEONLY,
     },
     totalOrden: {
       type: DataTypes.FLOAT,
