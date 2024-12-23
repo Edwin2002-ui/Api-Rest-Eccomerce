@@ -23,7 +23,7 @@ module.exports = (sequelize, DataTypes) => {
     fechaCreacion: {
       type: DataTypes.DATE,
       allowNull: false,
-      defaultValue: DataTypes.NOW,
+      // defaultValue: DataTypes.NOW,
     },
   }, {
     tableName: 'Clientes',
