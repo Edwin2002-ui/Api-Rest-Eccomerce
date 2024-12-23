@@ -32,12 +32,11 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING(20),
     },
     fechaNacimiento: {
-      type: DataTypes.DATE,
+      type: DataTypes.DATEONLY,
     },
     fechaCreacion: {
       type: DataTypes.DATE,
       allowNull: false,
-      defaultValue: DataTypes.NOW,
     },
   }, {
     tableName: 'Usuarios',
