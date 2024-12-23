@@ -34,7 +34,7 @@ exports.updateEstado = async (req, res) => {
 
         const estado = await Estados.findByPk(id);
 
-        if (!estados) {
+        if (!estado) {
             return res.status(404).json({ error: 'Estado no encontrado' });
         }
 
