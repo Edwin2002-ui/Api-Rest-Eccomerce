@@ -18,6 +18,7 @@ app.use('/api/categorias', require('./routes/categoriasRoutes'));
 app.use('/api/estados', require('./routes/estadosRoutes'));
 app.use('/api/usuarios', require('./routes/usuariosRoutes'));
 app.use('/api/orden', require('./routes/ordenesRoutes'));
+app.use('/api/clientes', require('./routes/clientesRoutes'));
 
 // Sincroniza con la base de datos y arranca el servidor
 sequelize.authenticate()
